@@ -1,0 +1,69 @@
+/* 模拟交易页面样式 */
+.account-card {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrapper {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.trade-input {
+  background-color: transparent;
+  width: 100%;
+  color: #1e293b;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.trade-input::placeholder {
+  color: #94a3b8;
+}
+
+/* 小程序端Input组件样式修复 - 解决白色框问题 */
+.trade-input-fix {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #1e293b !important;
+  font-size: 1rem !important;
+  min-height: unset !important;
+  height: auto !important;
+  line-height: 1.5 !important;
+}
+
+.trade-input-fix::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* 账户信息卡片白色区域修复 */
+.account-info-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+/* 交易弹窗样式修复 */
+.trade-modal {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.trade-modal-input {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  box-sizing: border-box;
+}

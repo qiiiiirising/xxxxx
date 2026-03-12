@@ -1,0 +1,5 @@
+{
+  "appId": "com.coze.stockanalyzer",
+  "appName": "智能股票分析",
+  "webDir": "dist-web"
+}

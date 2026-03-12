@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">智能股票分析</string>
+    <string name="title_activity_main">智能股票分析</string>
+    <string name="package_name">com.coze.stockanalyzer</string>
+    <string name="custom_url_scheme">com.coze.stockanalyzer</string>
+</resources>

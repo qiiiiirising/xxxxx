@@ -1,0 +1,216 @@
+/* 用户管理页面样式 */
+
+/* 用户卡片优化 */
+.user-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.user-card:active {
+  transform: scale(0.98);
+}
+
+/* 用户头像优化 */
+.user-avatar {
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.user-avatar-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+/* 用户信息布局优化 */
+.user-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.user-info-content {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-details {
+  flex: 1;
+}
+
+.user-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.user-username {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+/* 标签优化 */
+.user-badges {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.user-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* 角色标签 */
+.user-badge-admin {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.user-badge-user {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+/* 状态标签 */
+.user-badge-active {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.user-badge-disabled {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+/* 用户信息底部 */
+.user-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.user-card-time {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.user-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* 按钮优化 */
+.user-action-button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.user-action-button:active {
+  transform: scale(0.95);
+}
+
+/* 创建用户弹窗优化 */
+.create-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.create-modal-content {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* 表单输入框优化 */
+.form-label {
+  font-size: 0.875rem;
+  color: #475569;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-input-wrapper {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  background-color: transparent;
+  width: 100%;
+  color: #1e293b;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+/* 角色选择按钮 */
+.role-button {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.role-button-active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.role-button-inactive {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+/* 小程序端兼容 */
+.fix-bg-transparent {
+  background-color: transparent !important;
+}
+
+.fix-border-none {
+  border: none !important;
+}
